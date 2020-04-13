@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Boups Inc. Official Website",
-    "currentPage": "index.html",
+    "currentPage": "page3.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -47,9 +47,9 @@
     "imageResize": true,
     "favicon": false,
     "robotsSwitcher": false,
-    "sitemapSwitcher": true,
+    "sitemapSwitcher": false,
     "sitemapSwitcherAuto": "on",
-    "siteUrl": "https://iamthe2ndhuman.github.io/boupssite/",
+    "siteUrl": false,
     "gdpr": false,
     "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
     "cookiesAlert": false
@@ -1420,7 +1420,7 @@
     "page2.html": {
       "settings": {
         "meta_descr": "Web Creator Description",
-        "title": "Donate",
+        "title": "Donate to Boups Inc.",
         "order": 2
       },
       "components": [
@@ -3319,7 +3319,7 @@
     "page5.html": {
       "settings": {
         "meta_descr": "The world's #1 operating system.",
-        "title": "BruhOS",
+        "title": "BruhOS by Boups Inc.",
         "order": 3
       },
       "components": [
