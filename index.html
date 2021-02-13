@@ -177,7 +177,21 @@
         <div class="hoursCountdown" title="Hours"></div> 
         <div class="minutesCountdown" title="Minutes"></div> 
         <div class="secondsCountdown" title="Seconds"></div>
-        <div class="countdown pt-5 mt-2" data-due-date="2021/02/14"> 
+
+        <div class="countdown pt-5 mt-2" data-due-date="gamingre" id="gaming">
+
+        <script>
+            const date = new Date('2021/02/13 23:00 UTC');
+            let h = date.getFullYear();
+            let hh = date.getMonth();
+            let hhh = date.getDate();
+
+            let hhhh = date.getHours();
+            let hhhhh = date.getMinutes();
+
+            document.getElementById('gaming').setAttribute("data-due-date", `${h}/0${hh+1}/${hhh} ${hhhh}:${hhhhh}0`)
+
+        </script>
         </div>
     </div>
 </section>
