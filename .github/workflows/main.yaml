@@ -1,23 +1,20 @@
 name: Sync multiple branches
   
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '0 23 13 02 *'
+
 jobs:
   sync-branch:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
 
-      - name: Merge development -> staging
+      - name: gaming
         uses: devmasx/merge-branch@v1.3.1
         with:
           type: now
-          from_branch: development
-          target_branch: staging
-          github_token: ${{ github.token }}
-
-      - name: Merge staging -> uat
-        uses: devmasx/merge-branch@v1.3.1
-        with:
-          type: now
-          from_branch: staging
-          target_branch: uat
+          from_branch: gaming-wait
+          target_branch: gh-pages
           github_token: ${{ github.token }}
